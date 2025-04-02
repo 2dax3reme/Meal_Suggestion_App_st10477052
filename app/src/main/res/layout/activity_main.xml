@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#0F0E0E"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="423dp"
+        android:layout_height="815dp"
+        android:background="#070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/meal_app_bg" />
+
+    <TextView
+        android:id="@+id/title_of_screen"
+        android:layout_width="190dp"
+        android:layout_height="27dp"
+        android:text="FOOD APPLICATION "
+        android:textAlignment="center"
+        android:textColor="#F4EFEF"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Background"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <EditText
+        android:id="@+id/edtTime"
+        android:layout_width="348dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Meal time eg.(Breakfast/Lunch/Mid-Morning,etc...)"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#F0EEEE"
+        android:textColorHint="#878484"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prompt_time"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/prompt_time"
+        android:layout_width="186dp"
+        android:layout_height="42dp"
+        android:text="Enter The Time Of Day :"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_of_screen"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <TextView
+        android:id="@+id/suggestion"
+        android:layout_width="215dp"
+        android:layout_height="34dp"
+        android:text="Meal Suggestion :"
+        android:textAlignment="center"
+        android:textColor="#F6F3F3"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTime"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <Button
+        android:id="@+id/refresh_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/black"
+        android:text="Generate"
+        android:textColor="#FDFDFD"
+        android:textColorLink="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Background"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/Background"
+        app:layout_constraintTop_toBottomOf="@+id/answerBox"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <TextView
+        android:id="@+id/answerBox"
+        android:layout_width="182dp"
+        android:layout_height="158dp"
+        android:textAlignment="center"
+        android:textColor="#FAF6F6"
+        android:textColorLink="#F6F6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggestion"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <Button
+        android:id="@+id/real_refresh_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REFRESH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refresh_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
